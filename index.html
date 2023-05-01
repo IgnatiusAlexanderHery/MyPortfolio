@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,14 +37,12 @@
     </nav>
     <!-- End Navbar -->
 
-    <!--  -->
-
     <!-- Hero Section -->
     <section class="text-center" id="Home">
       <div class="BC10 Hero">
         <img src="img/alex.jpg" alt="Ignatius Alexander Hery" width="200" height="200" class="rounded-circle img-thumbnail" />
-        <h1 class="display-4">Ignatius Alexander Hery</h1>
-        <p class="lead" style="margin-bottom: 0%">Software Enginier | Web Developer</p>
+        <h1 class="display-4 text-dark">Ignatius Alexander Hery</h1>
+        <p class="lead text-dark" style="margin-bottom: 0%">Software Enginier | Web Developer</p>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -97,7 +95,7 @@
         <div class="row fs-5 justify-content-center d-md-flex">
           <div class="col-md-4 text-center">
             <h3>Education</h3>
-            <div class="card mb-3" style="max-width: 540px">
+            <div class="card bg-body-tertiary mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4 align-self-center">
                   <img src="img/Logo-Binus.png" class="img-fluid rounded-start" alt="Bina Nusantara" />
@@ -111,7 +109,7 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px">
+            <div class="card bg-body-tertiary mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4 align-self-center">
                   <img src="img/KusumaBangsa.png" class="img-fluid rounded-start" alt="Kusuma Bangsa" />
@@ -128,7 +126,7 @@
           </div>
           <div class="col-md-4 text-center">
             <h3>Work</h3>
-            <div class="card mb-3" style="max-width: 540px">
+            <div class="card bg-body-tertiary mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4 align-self-center">
                   <img src="img/Blibli.png" class="img-fluid rounded-start" alt="Blibli" />
@@ -161,37 +159,47 @@
         <div class="container">
           <div class="row text-center">
             <div class="col">
-              <h2>My Projects</h2>
+              <h2 class="text-dark">My Projects</h2>
             </div>
           </div>
           <div class="row justify-content-center">
-            <div class="col-md-4 mb-3 d-flex">
-              <div class="card">
+            <div class="col-md-4 mb-3">
+              <div class="card bg-transparent text-dark border-black border-2">
                 <img src="img/LetFlix.png" class="card-img-top" alt="Project 1" />
                 <div class="card-body">
                   <p class="card-text">Create a simple, locally-based website film list</p>
                   <p class="card-text">with HTML, CSS, JS</p>
-                  <a href="https://github.com/DarkAsura/Letflix.git">Check in github</a>
+                  <a href="https://github.com/IgnatiusAlexanderHery/Letflix.git">Check in github</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-3 d-flex">
-              <div class="card">
+            <div class="col-md-4 mb-3">
+              <div class="card bg-transparent text-dark border-black border-2">
                 <img src="img/GiantBookSupploier.png" class="card-img-top" alt="Project 1" />
                 <div class="card-body">
                   <p class="card-text">Create a simple, locally-based website book database</p>
-                  <p class="card-text">with HTML, CSS, Laravel</p>
-                  <a href="https://github.com/DarkAsura/GiantBookSupploier.git">Check in github</a>
+                  <p class="card-text">with Laravel</p>
+                  <a href="https://github.com/IgnatiusAlexanderHery/GiantBookSupploier.git">Check in github</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-3 d-flex">
-              <div class="card">
+            <div class="col-md-4 mb-3">
+              <div class="card bg-transparent text-dark border-black border-2">
                 <img src="img/ProjectRestaurant.png" class="card-img-top" alt="Project 1" />
                 <div class="card-body">
                   <p class="card-text">Create a simple app for Restaurant Order</p>
                   <p class="card-text">with Java</p>
-                  <a href="https://github.com/DarkAsura/ProjectRestaurant.git">Check in github</a>
+                  <a href="https://github.com/IgnatiusAlexanderHery/ProjectRestaurant.git">Check in github</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card bg-transparent text-dark border-black border-2">
+                <img src="img/NeedForSkin.png" class="card-img-top" alt="Project 1" />
+                <div class="card-body">
+                  <p class="card-text">Create a simple web for sell buy game account</p>
+                  <p class="card-text">with Laravel</p>
+                  <a href="https://github.com/IgnatiusAlexanderHery/NeedForSkin">Check in github </a>, or <a href="https://needforskin.000webhostapp.com/">hosting</a>
                 </div>
               </div>
             </div>
@@ -221,15 +229,15 @@
             <form id="contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama :</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <input type="text" class="form-control bg-white text-dark" id="name" aria-describedby="name" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email :</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control bg-white text-dark" id="email" aria-describedby="email" />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan :</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea class="form-control bg-white text-dark" id="pesan" rows="3"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Kirim</button>
             </form>
@@ -248,9 +256,21 @@
 
     <!-- Footer Section -->
     <footer class="BC30 text-center fs-5 pb-3">
-      <p>Created by <a href="https://www.instagram.com/alexhery3107/" style="color: black; text-decoration: none">Ignatius Alexander Hery</a></p>
+      <p class="text-dark">Created by <a href="https://www.instagram.com/alexhery3107/" style="color: black; text-decoration: none">Ignatius Alexander Hery</a></p>
     </footer>
     <!-- End Footer -->
+
+    <!-- button dark/light mode -->
+    <div class="position-fixed bottom-0 end-0 p-2">
+      <button class="btn btn-dark shadow rounded-circle" id="btnSwitch">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+          <path
+            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- end dark/light mode -->
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script src="form.js"></script>
     <script src="index.js"></script>
