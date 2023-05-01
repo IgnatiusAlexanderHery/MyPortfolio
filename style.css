@@ -1,0 +1,53 @@
+/* 
+60% = FF6666 
+30% = FFB3B3
+10% = FFE6E6
+*/
+body {
+  text-align: justify;
+}
+
+.BC60 {
+  background-color: #ff6666;
+}
+
+.BC30 {
+  background-color: #ffb3b3;
+}
+
+.BC10 {
+  background-color: #ffe6e6;
+}
+
+.Hero {
+  padding-top: 6rem;
+}
+
+section {
+  padding-top: 3rem;
+}
+
+.card-img-top {
+  width: auto;
+  height: 25vh;
+  object-fit: scale-down;
+}
+
+.nav-item.active a {
+  color: black;
+  font-weight: bold;
+}
+
+#EducationAndWorkCard .card {
+  min-height: 20vh;
+  max-height: 20vh;
+}
+
+#EducationAndWorkCard .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: medium;
+}
