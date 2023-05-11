@@ -91,7 +91,7 @@
           </div>
         </div>
       </div>
-      <div class="container" id="EducationAndWorkCard">
+      <div class="container">
         <div class="row fs-5 justify-content-center d-md-flex">
           <div class="col-md-4 text-center">
             <h3>Education</h3>
@@ -134,7 +134,7 @@
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Blibli</h5>
-                    <p class="card-text">As Software Enginier as intern</p>
+                    <p class="card-text">As Software Engineer as intern</p>
                     <p class="card-text"><small class="text-body-secondary">2023 - 2024 (EXPECTED)</small></p>
                   </div>
                 </div>
@@ -229,15 +229,15 @@
             <form id="contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Name :</label>
-                <input type="text" class="form-control bg-white text-dark" id="name" aria-describedby="name" />
+                <input type="text" class="form-control bg-white text-dark" required id="name" aria-describedby="name" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email :</label>
-                <input type="email" class="form-control bg-white text-dark" id="email" aria-describedby="email" />
+                <input type="email" class="form-control bg-white text-dark" required id="email" aria-describedby="email" />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Message :</label>
-                <textarea class="form-control bg-white text-dark" id="pesan" rows="3"></textarea>
+                <textarea class="form-control bg-white text-dark" id="pesan" required rows="3" style="max-height: 200px"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Sent</button>
             </form>
