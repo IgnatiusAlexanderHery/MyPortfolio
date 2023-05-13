@@ -40,13 +40,11 @@ document.getElementById("btnSwitch").addEventListener("click", () => {
   }
 });
 
-// Mendapatkan elemen gambar dan modal
 const Image = document.querySelectorAll("img");
 const modal = document.querySelector("#modal");
 const modalImg = document.querySelector("#modalImg");
 const navElements = document.querySelectorAll("nav");
 
-// Menambahkan event listener ke setiap gambar
 Image.forEach(function (Image) {
   Image.addEventListener("click", function () {
     modal.style.display = "flex";
@@ -62,7 +60,6 @@ Image.forEach(function (Image) {
   });
 });
 
-// Saat overlay diklik, sembunyikan modal
 modal.addEventListener("click", function () {
   modal.style.display = "none";
   navElements.forEach(function (navElement) {

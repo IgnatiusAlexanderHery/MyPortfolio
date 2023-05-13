@@ -3,7 +3,7 @@ emailjs.init("vg0-LtTdmKj79MQ4p");
 function validateForm(event) {
   event.preventDefault();
   if (grecaptcha.getResponse() == "") {
-    console.log(grecaptcha.getResponse());
+    console.log(grecaptcha.getResponse() + " if ");
     return false;
   } else {
     console.log(grecaptcha.getResponse() + " else ");
@@ -42,7 +42,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
       }
     );
     sent.innerHTML = text;
-    sentdisabled = false;
+    sent.disabled = false;
     console.log("sent");
   }
 });
