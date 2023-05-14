@@ -74,3 +74,41 @@ section {
   max-width: 80% !important;
   max-height: 80% !important;
 }
+
+#contact-form .captcha .preview {
+  color: #555;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  border: 1px dashed #888;
+  font-family: "monospace";
+}
+
+#contact-form .captcha .preview span {
+  display: inline-block;
+  user-select: none;
+}
+
+#contact-form .captcha .captcha-form {
+  display: flex;
+}
+
+#contact-form .captcha .captcha-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+#contact-form .captcha .captcha-form .captcha-refresh {
+  width: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#sent {
+  margin-top: 2rem;
+  width: 100%;
+}
