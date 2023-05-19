@@ -57,6 +57,7 @@ Image.forEach(function (Image) {
     navElements.forEach(function (navElement) {
       navElement.style.zIndex = "1";
     });
+    document.body.style.overflow = "hidden";
   });
 });
 
@@ -65,4 +66,5 @@ modal.addEventListener("click", function () {
   navElements.forEach(function (navElement) {
     navElement.style.zIndex = null;
   });
+  document.body.style.overflow = "auto";
 });
