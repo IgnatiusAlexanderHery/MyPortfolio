@@ -44,13 +44,13 @@ const Timeline = ({ events }) => {
 
 export const CardWithImageUrlTitleTextRepositoryLive = ({ title, text, image, alt, repository, live }) => {
   return (
-    <div className="card relative flex w-80 flex-col rounded-xl bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
-      {image && alt && <img src={image} alt={alt} className="rounded-xl self-center object-fill h-48 w-96" />}
-      <div className="p-6">
-        {title && <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">{title}</h5>}
+    <div className="card flex flex-col justify-between w-full rounded-xl bg-white dark:bg-gray-900 h-full">
+      {image && alt && <img src={image} alt={alt} className="rounded-xl self-center object-fill  w-full h-28 -xs:h-28 sm:h-28 md:h-28 lg:h-28 xl:h-28 " />}
+      <div className="p-6 py-2">
+        {title && <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal dark:text-blue-200 text-blue-900 antialiased">{title}</h5>}
         {text && <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">{text}</p>}
       </div>
-      <div className="p-6 pt-0">
+      <div className="p-4 pt-2">
         {repository && (
           <button
             data-ripple-light="true"

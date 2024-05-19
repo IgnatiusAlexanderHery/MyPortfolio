@@ -2,6 +2,8 @@ import React from "react";
 import { Footer } from "./Components/Footer/Footer";
 import DarkModeButton from "./Utils/DarkMode/DarkModeButton";
 import { useEffect } from "react";
+import { GridContainer } from "./Utils/GridLayout/GridContainer";
+import { Header } from "./Components/Header/Header";
 
 function App() {
   useEffect(() => {
@@ -26,33 +28,88 @@ function App() {
     };
   }, []);
 
+  const GridDatas = [
+    {
+      title: "Title 1",
+      text: "Text 1",
+      image: "https://via.placeholder.com/150",
+      alt: "Alt 1",
+      repository: "https://github.com",
+      live: "https://github.com",
+      x: 0,
+      y: 0,
+      w: 1,
+      h: 1,
+    },
+    {
+      title: "Title 1",
+      text: "Text 1",
+      image: "https://via.placeholder.com/150",
+      alt: "Alt 1",
+      repository: "https://github.com",
+      live: "https://github.com",
+      x: 1,
+      y: 0,
+      w: 1,
+      h: 1,
+    },
+    {
+      title: "Title 1",
+      text: "Text 1",
+      image: "https://via.placeholder.com/150",
+      alt: "Alt 1",
+      repository: "https://github.com",
+      live: "https://github.com",
+      x: 2,
+      y: 0,
+      w: 1,
+      h: 1,
+    },
+    {
+      title: "Title 1",
+      text: "Text 1",
+      image: "https://via.placeholder.com/150",
+      alt: "Alt 1",
+      repository: "https://github.com",
+      live: "https://github.com",
+      x: 3,
+      y: 0,
+      w: 1,
+      h: 1,
+    },
+    {
+      title: "Title 1",
+      text: "Text 1",
+      image: "https://via.placeholder.com/150",
+      alt: "Alt 1",
+      repository: "https://github.com",
+      live: "https://github.com",
+      x: 4,
+      y: 0,
+      w: 1,
+      h: 1,
+    },
+    {
+      title: "Title 1",
+      text: "Text 1",
+      image: "https://via.placeholder.com/150",
+      alt: "Alt 1",
+      repository: "https://github.com",
+      live: "https://github.com",
+      x: 5,
+      y: 0,
+      w: 1,
+      h: 1,
+    },
+  ];
+
   return (
     <div className="App scroll-smooth">
       <DarkModeButton />
-      <nav className="navbar shadow-sm bg-blue-400 dark:bg-blue-800 sticky top-0">
-        <div className="flex justify-between p-5">
-          <a href="/">Ignatius Alexander Hery</a>
-          <div className="">
-            <ul className="flex justify-evenly gap-4">
-              <li className="nav-item">
-                <a href="#Home">Home</a>
-              </li>
-              <li className="nav-item">
-                <a href="#About">About</a>
-              </li>
-              <li className="nav-item">
-                <a href="#Projects">Projects</a>
-              </li>
-              <li className="nav-item">
-                <a href="#Contact">Contact Me</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Header />
       <main className="main">
         <section id="Home" className="min-h-screen pt-16">
-          Home
+          <GridContainer GridDatas={GridDatas} />
         </section>
         <section id="About" className="min-h-screen pt-16">
           About

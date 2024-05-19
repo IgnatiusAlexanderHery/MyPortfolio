@@ -16,3 +16,13 @@ code {
 html {
   scroll-behavior: smooth;
 }
+
+@media only screen and (max-width: 320px) {
+  html {
+    max-width: inherit;
+    width: 100%;
+    padding: 0 1em;
+    word-break: break-word;
+    font-size: xx-small;
+  }
+}

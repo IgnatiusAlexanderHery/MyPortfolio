@@ -7,7 +7,7 @@ class DataGrid {
   }
 }
 
-export class DataGridWithTitleTextImageAltRepositoryLive extends DataGridWithText {
+export class DataGridWithTitleTextImageAltRepositoryLive extends DataGrid {
   constructor(title, text, image, alt, repository, live, x, y, w, h) {
     super(text, x, y, w, h);
     this.title = title;

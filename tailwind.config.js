@@ -3,7 +3,11 @@ module.exports = {
   darkMode: "selector",
   content: ["./src/**/*.{html,jsx,js}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        "-xs": "320px",
+      },
+    },
   },
   plugins: [],
 };

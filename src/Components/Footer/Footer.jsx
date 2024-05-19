@@ -1,4 +1,4 @@
-import { Instagram } from "../../Utils/Icons/Instagram";
+import { Github, Instagram, Linkedin } from "../../Utils/Icons/Icons";
 
 export const Footer = () => {
   return (
@@ -7,9 +7,9 @@ export const Footer = () => {
         Created by&nbsp;<a href="https://www.instagram.com/alexhery3107/">Ignatius Alexander Hery</a>
       </p>
       <div className="flex justify-center gap-4">
-        <Instagram Url={"https://github.com/IgnatiusAlexanderHery"} />
+        <Github Url={"https://github.com/IgnatiusAlexanderHery"} />
         <Instagram Url={"https://www.instagram.com/alexhery3107/"} />
-        <Instagram Url={"http://www.linkedin.com/in/ignatiusalexanderhery"} />
+        <Linkedin Url={"http://www.linkedin.com/in/ignatiusalexanderhery"} />
       </div>
     </footer>
   );
