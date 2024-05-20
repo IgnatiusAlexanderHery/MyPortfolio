@@ -1,8 +1,85 @@
-{
-  "name": "alex",
-  "alamat": "jakarta",
-  "Jabatan": {
-    "nama": "manager",
-    "gaji": 10000000
+[
+  {
+    "type": "1",
+    "title": "Title 1 x1 y0",
+    "text": "Text 1",
+    "image": "https://via.placeholder.com/150",
+    "alt": "Alt 1",
+    "repository": "https://github.com",
+    "live": "https://github.com",
+    "x": 1,
+    "y": 0,
+    "w": 1,
+    "h": 2
+  },
+  {
+    "type": "1",
+    "title": "Title 1 x0 y0",
+    "text": "Text 1",
+    "image": "https://via.placeholder.com/150",
+    "alt": "Alt 1",
+    "repository": "https://github.com",
+    "live": "https://github.com",
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 2
+  },
+  {
+    "type": "1",
+    "title": "Title 1 x0 y0",
+    "text": "Text 1",
+    "image": "https://via.placeholder.com/150",
+    "alt": "Alt 1",
+    "repository": "https://github.com",
+    "live": "https://github.com",
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 2
+  },
+  {
+    "type": "1",
+    "title": "Title 2 x1",
+    "text": "Text 2",
+    "image": "https://via.placeholder.com/150",
+    "alt": "Alt 2",
+    "repository": "https://github.com",
+    "live": "https://github.com",
+    "x": 1,
+    "y": 0,
+    "w": 1,
+    "h": 2
+  },
+  {
+    "type": "1",
+    "title": "Title 2 x1",
+    "text": "Text 2",
+    "image": "https://via.placeholder.com/150",
+    "alt": "Alt 2",
+    "repository": "https://github.com",
+    "live": "https://github.com",
+    "x": 1,
+    "y": 0,
+    "w": 1,
+    "h": 2
+  },
+  {
+    "type": "2",
+    "title": "Skills",
+    "Skills": ["Java", "Python", "Go", "MonggoDb", "Postgres", "Git", "Bitbucket", "HTML", "CSS", "JavaScript", "Jira", "Slack", "Scrum"],
+    "x": 2,
+    "y": 0,
+    "w": 1,
+    "h": 1
+  },
+  {
+    "type": "2",
+    "title": "Framework",
+    "Skills": ["React", "Laravel", "Django", "SpringBoot"],
+    "x": 2,
+    "y": 3,
+    "w": 1,
+    "h": 1
   }
-}
+]

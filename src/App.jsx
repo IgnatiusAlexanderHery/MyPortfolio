@@ -4,8 +4,11 @@ import DarkModeButton from "./Utils/DarkMode/DarkModeButton";
 import { useEffect } from "react";
 import { GridContainer } from "./Utils/GridLayout/GridContainer";
 import { Header } from "./Components/Header/Header";
+import getData from "./API/GetData";
 
 function App() {
+  const GridDatas = getData();
+
   useEffect(() => {
     const navItems = document.querySelectorAll(".nav-item");
     const handleScroll = () => {
@@ -27,81 +30,6 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const GridDatas = [
-    {
-      title: "Title 1",
-      text: "Text 1",
-      image: "https://via.placeholder.com/150",
-      alt: "Alt 1",
-      repository: "https://github.com",
-      live: "https://github.com",
-      x: 0,
-      y: 0,
-      w: 1,
-      h: 1,
-    },
-    {
-      title: "Title 1",
-      text: "Text 1",
-      image: "https://via.placeholder.com/150",
-      alt: "Alt 1",
-      repository: "https://github.com",
-      live: "https://github.com",
-      x: 1,
-      y: 0,
-      w: 1,
-      h: 1,
-    },
-    {
-      title: "Title 1",
-      text: "Text 1",
-      image: "https://via.placeholder.com/150",
-      alt: "Alt 1",
-      repository: "https://github.com",
-      live: "https://github.com",
-      x: 2,
-      y: 0,
-      w: 1,
-      h: 1,
-    },
-    {
-      title: "Title 1",
-      text: "Text 1",
-      image: "https://via.placeholder.com/150",
-      alt: "Alt 1",
-      repository: "https://github.com",
-      live: "https://github.com",
-      x: 3,
-      y: 0,
-      w: 1,
-      h: 1,
-    },
-    {
-      title: "Title 1",
-      text: "Text 1",
-      image: "https://via.placeholder.com/150",
-      alt: "Alt 1",
-      repository: "https://github.com",
-      live: "https://github.com",
-      x: 4,
-      y: 0,
-      w: 1,
-      h: 1,
-    },
-    {
-      title: "Title 1",
-      text: "Text 1",
-      image: "https://via.placeholder.com/150",
-      alt: "Alt 1",
-      repository: "https://github.com",
-      live: "https://github.com",
-      x: 5,
-      y: 0,
-      w: 1,
-      h: 1,
-    },
-  ];
 
   return (
     <div className="App scroll-smooth">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 export const CardTimeline = ({ icon, title, description, events }) => {
   return (
@@ -74,11 +74,44 @@ export const CardWithImageUrlTitleTextRepositoryLive = ({ title, text, image, al
   );
 };
 
-export const SkillCard = ({ Skills }) => {
+export const SkillCard = ({ Skills, title }) => {
+  const scrollContainerRef = useRef(null);
+  const [hover, setHover] = useState(false);
+
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    let scrollInterval;
+    let isScrollingDown = true;
+
+    if (scrollContainer && !hover) {
+      scrollInterval = setInterval(() => {
+        if (isScrollingDown) {
+          if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight - 1) {
+            isScrollingDown = false;
+          } else {
+            scrollContainer.scrollTop += 1;
+          }
+        } else {
+          if (scrollContainer.scrollTop <= 0) {
+            isScrollingDown = true;
+          } else {
+            scrollContainer.scrollTop -= 1;
+          }
+        }
+      }, 30);
+    }
+
+    return () => clearInterval(scrollInterval);
+  }, [hover]);
+
   return (
-    <div className="flex flex-col gap-1 justify-center items-start w-[280px] px-4 py-4 shadow-xl rounded-lg bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900">
-      <p className="font-semibold text-xl text-gray-600 dark:text-white mb-2">Skils</p>
-      <div className="flex flex-wrap gap-2">
+    <div
+      className="SkillCard flex flex-col gap-1 items-start px-4 py-4 shadow-xl rounded-lg bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900 h-full w-full justify-start"
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
+      <p className="font-semibold text-xl text-gray-600 dark:text-white mb-2">{title}</p>
+      <div className="flex flex-wrap gap-2 overflow-x-hidden no-scrollbar" ref={scrollContainerRef}>
         {Skills.map((skill, index) => (
           <div key={index} className="bg-blue-500 text-white px-2 py-1 rounded-lg">
             {skill}
