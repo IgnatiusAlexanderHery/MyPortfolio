@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
-import { CardWithImageUrlTitleTextRepositoryLive, SkillCard } from "../Card/Card";
+import { CardWithImageUrlTitleTextRepositoryLive, SkillCard, CardTimeline, CardWithLeftImageTitleText } from "../Card/Card";
 
 export const GridContainer = ({ GridDatas }) => {
   const ResponsiveGridLayout = WidthProvider(Responsive);
@@ -44,21 +44,41 @@ export const GridContainer = ({ GridDatas }) => {
 
   useEffect(() => {
     const calculateGridPositions = (items, cols) => {
-      let x = 0;
-      let y = 0;
+      const occupied = {};
+
+      const findNextEmptySpot = (w, h) => {
+        let y = 0;
+        while (true) {
+          for (let x = 0; x <= cols - w; x++) {
+            let spotAvailable = true;
+            for (let i = 0; i < w; i++) {
+              for (let j = 0; j < h; j++) {
+                if (occupied[`${x + i},${y + j}`]) {
+                  spotAvailable = false;
+                  break;
+                }
+              }
+              if (!spotAvailable) break;
+            }
+            if (spotAvailable) return { x, y };
+          }
+          y++;
+        }
+      };
 
       return items.map((item) => {
-        if (x + item.w > cols) {
-          x = 0;
-          y += 1;
+        const { w, h } = item;
+        const { x, y } = findNextEmptySpot(w, h);
+
+        for (let i = 0; i < w; i++) {
+          for (let j = 0; j < h; j++) {
+            occupied[`${x + i},${y + j}`] = true;
+          }
         }
 
-        const position = { ...item, x, y };
+        maxY.current = Math.max(maxY.current, y + h);
 
-        x += item.w;
-        maxY.current = Math.max(maxY.current, y + item.h);
-
-        return position;
+        return { ...item, x, y };
       });
     };
 
@@ -83,7 +103,15 @@ export const GridContainer = ({ GridDatas }) => {
           data-grid={{ x: GridData.x, y: GridData.y, w: GridData.w, h: GridData.h }}
           className="bg-white border dark:border-0 border-gray-300 flex flex-col items-center justify-center text-lg draggable-handle rounded-xl lg:text-base md:text-sm sm:text-xs xs:text-xs xxs:text-xs dark:bg-gray-900 dark:border-gray-700 dark:text-white"
         >
-          {GridData.type === "2" ? <SkillCard {...GridData} /> : <CardWithImageUrlTitleTextRepositoryLive {...GridData} />}
+          {GridData.type === "2" ? (
+            <SkillCard {...GridData} />
+          ) : GridData.type === "3" ? (
+            <CardTimeline {...GridData} />
+          ) : GridData.type === "4" ? (
+            <CardWithLeftImageTitleText {...GridData} />
+          ) : (
+            <CardWithImageUrlTitleTextRepositoryLive {...GridData} />
+          )}
         </div>
       ))}
     </ResponsiveGridLayout>

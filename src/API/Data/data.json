@@ -1,85 +1,162 @@
 [
   {
-    "type": "1",
-    "title": "Title 1 x1 y0",
-    "text": "Text 1",
-    "image": "https://via.placeholder.com/150",
-    "alt": "Alt 1",
-    "repository": "https://github.com",
-    "live": "https://github.com",
-    "x": 1,
-    "y": 0,
-    "w": 1,
-    "h": 2
-  },
-  {
-    "type": "1",
-    "title": "Title 1 x0 y0",
-    "text": "Text 1",
-    "image": "https://via.placeholder.com/150",
-    "alt": "Alt 1",
-    "repository": "https://github.com",
-    "live": "https://github.com",
+    "type": "4",
+    "title": "Ignatius Alexander Hery",
+    "text": "Software Engineering, Web Development",
+    "image": "alex.jpg",
+    "alt": "Alex",
     "x": 0,
     "y": 0,
-    "w": 1,
-    "h": 2
+    "w": 2,
+    "h": 1
   },
-  {
-    "type": "1",
-    "title": "Title 1 x0 y0",
-    "text": "Text 1",
-    "image": "https://via.placeholder.com/150",
-    "alt": "Alt 1",
-    "repository": "https://github.com",
-    "live": "https://github.com",
-    "x": 0,
-    "y": 0,
-    "w": 1,
-    "h": 2
-  },
-  {
-    "type": "1",
-    "title": "Title 2 x1",
-    "text": "Text 2",
-    "image": "https://via.placeholder.com/150",
-    "alt": "Alt 2",
-    "repository": "https://github.com",
-    "live": "https://github.com",
-    "x": 1,
-    "y": 0,
-    "w": 1,
-    "h": 2
-  },
-  {
-    "type": "1",
-    "title": "Title 2 x1",
-    "text": "Text 2",
-    "image": "https://via.placeholder.com/150",
-    "alt": "Alt 2",
-    "repository": "https://github.com",
-    "live": "https://github.com",
-    "x": 1,
-    "y": 0,
-    "w": 1,
-    "h": 2
-  },
+
   {
     "type": "2",
-    "title": "Skills",
-    "Skills": ["Java", "Python", "Go", "MonggoDb", "Postgres", "Git", "Bitbucket", "HTML", "CSS", "JavaScript", "Jira", "Slack", "Scrum"],
-    "x": 2,
-    "y": 0,
+    "title": "Programing Language",
+    "Skills": ["C", "Java", "Python", "Go", "PHP", "HTML", "CSS", "JS", "SQL"],
+    "x": 0,
+    "y": 1,
     "w": 1,
     "h": 1
   },
   {
     "type": "2",
     "title": "Framework",
-    "Skills": ["React", "Laravel", "Django", "SpringBoot"],
-    "x": 2,
-    "y": 3,
+    "Skills": ["Laravel", "Spring Boot", "Django", "Bootstrap", "Tailwind CSS", "React JS"],
+    "x": 0,
+    "y": 1,
     "w": 1,
     "h": 1
+  },
+  {
+    "type": "3",
+    "icon": "education.png",
+    "title": "Education Experience",
+    "description": "A list of my education.",
+    "events": [
+      {
+        "icon": "Logo-Binus.png",
+        "title": "Bina Nusantara",
+        "badge": "Computer Science",
+        "date": "2020 - 2024",
+        "description": "Worked on various projects including web development and software engineering.",
+        "link": {
+          "href": "https://binus.ac.id/",
+          "icon": "🔗",
+          "text": "Education Website"
+        }
+      },
+      {
+        "icon": "KusumaBangsa.png",
+        "title": "Kusuma Bangsa Palembang",
+        "badge": "Natural Sciences",
+        "date": "2017 - 2020",
+        "description": "Worked on various projects including web development and software engineering.",
+        "link": {
+          "href": "https://kumbang.sch.id/",
+          "icon": "🔗",
+          "text": "Education Website"
+        }
+      }
+    ],
+    "x": 2,
+    "y": 1,
+    "w": 2,
+    "h": 3
+  },
+  {
+    "type": "3",
+    "icon": "suitcase.png",
+    "title": "Work Experience",
+    "description": "A list of my work experiences.",
+    "events": [
+      {
+        "icon": "suitcase.png",
+        "title": "Software Engineer Intern",
+        "badge": "Internship",
+        "date": "2023 Febuary - 2024 Febuary",
+        "description": "Worked on various projects including web development and software engineering.",
+        "link": {
+          "href": "https://www.blibli.com",
+          "icon": "🔗",
+          "text": "Company Website"
+        }
+      }
+    ],
+    "x": 2,
+    "y": 1,
+    "w": 2,
+    "h": 2
+  },
+  {
+    "type": "2",
+    "title": "Database",
+    "Skills": ["MySQL", "Postgre", "MonggoDB"],
+    "x": 0,
+    "y": 1,
+    "w": 1,
+    "h": 1
+  },
+  {
+    "type": "2",
+    "title": "Language",
+    "Skills": ["English", "Indonesia"],
+    "x": 0,
+    "y": 1,
+    "w": 1,
+    "h": 1
+  },
+  {
+    "type": "1",
+    "title": "Letflix",
+    "text": "Create a simple, locally-based website film list with HTML, CSS, JS",
+    "image": "LetFlix.png",
+    "alt": "Letflix",
+    "repository": "https://github.com/IgnatiusAlexanderHery/Letflix.git",
+    "live": "",
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 2
+  },
+  {
+    "type": "1",
+    "title": "GiantBookSupploier",
+    "text": "Create a simple, locally-based website book database with Laravel",
+    "image": "GiantBookSupploier.png",
+    "alt": "GiantBookSupploier",
+    "repository": "https://github.com/IgnatiusAlexanderHery/GiantBookSupplier.git",
+    "live": "",
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 2
+  },
+  {
+    "type": "1",
+    "title": "ProjectRestaurant",
+    "text": "Create a simple app for Restaurant Order with Java",
+    "image": "ProjectRestaurant.png",
+    "alt": "ProjectRestaurant",
+    "repository": "https://github.com/IgnatiusAlexanderHery/ProjectRestaurant.git",
+    "live": "",
+    "x": 2,
+    "y": 0,
+    "w": 1,
+    "h": 2
+  },
+  {
+    "type": "1",
+    "title": "NeedForSkin",
+    "text": "Create a simple web for sell buy game account with Laravel",
+    "image": "NeedForSkin.png",
+    "alt": "NeedForSkin",
+    "repository": "https://github.com/IgnatiusAlexanderHery/NeedForSkin",
+    "live": "https://needforskin.000webhostapp.com/",
+    "x": 3,
+    "y": 0,
+    "w": 1,
+    "h": 2
   }
 ]
