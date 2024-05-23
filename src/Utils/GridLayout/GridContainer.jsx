@@ -23,7 +23,7 @@ export const GridContainer = ({ GridDatas }) => {
     if (width >= 996) return 4;
     if (width >= 768) return 4;
     if (width >= 480) return 2;
-    return 1;
+    return 2;
   };
 
   const [rowHeight, setRowHeight] = useState(getSize);
