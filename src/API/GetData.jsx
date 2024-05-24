@@ -1,7 +1,7 @@
-import data from "./Data/data";
+import GridData from "./Data/GridData.json"
 
-function getData() {
-  return data;
+function getGridData() {
+  return GridData;
 }
 
 export default getData;

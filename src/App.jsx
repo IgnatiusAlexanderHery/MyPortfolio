@@ -3,10 +3,10 @@ import { Footer } from "./Components/Footer/Footer";
 import DarkModeButton from "./Utils/DarkMode/DarkModeButton";
 import { GridContainer } from "./Utils/GridLayout/GridContainer";
 import { Header } from "./Components/Header/Header";
-import getData from "./API/GetData";
+import getGridData from "./API/GetData";
 
 function App() {
-  const GridDatas = getData();
+  const GridDatas = getGridData();
 
   return (
     <div className="App scroll-smooth">
