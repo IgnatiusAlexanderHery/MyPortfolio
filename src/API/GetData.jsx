@@ -1,7 +1,5 @@
-import GridData from "./Data/GridData.json"
+import GridData from "./Data/GridData.json";
 
-function getGridData() {
+export const getGridData = () => {
   return GridData;
-}
-
-export default getData;
+};

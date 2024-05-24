@@ -3,7 +3,7 @@ import { Footer } from "./Components/Footer/Footer";
 import DarkModeButton from "./Utils/DarkMode/DarkModeButton";
 import { GridContainer } from "./Utils/GridLayout/GridContainer";
 import { Header } from "./Components/Header/Header";
-import getGridData from "./API/GetData";
+import { getGridData } from "./API/GetData";
 
 function App() {
   const GridDatas = getGridData();

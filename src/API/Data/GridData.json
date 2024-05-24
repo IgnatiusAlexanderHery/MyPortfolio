@@ -2,7 +2,7 @@
   {
     "type": "4",
     "title": "Ignatius Alexander Hery",
-    "text": "Software Engineering, Web Development",
+    "text": ["I am a Software Engineer", "I am a Web Developer"],
     "image": "alex.jpg",
     "alt": "Alex",
     "x": 0,

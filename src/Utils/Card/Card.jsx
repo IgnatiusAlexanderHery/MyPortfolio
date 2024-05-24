@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import TypingText from "../../Components/Text/TypingText";
 
 const GetPublicUrl = (image) => {
   return process.env.PUBLIC_URL + "/img/" + image;
@@ -91,11 +92,11 @@ export const CardWithImageUrlTitleTextRepositoryLive = ({ title, text, image, al
 
 export const CardWithLeftImageTitleText = ({ title, text, image, alt }) => {
   return (
-    <div className="card flex flex-row justify-between w-full rounded-xl bg-white dark:bg-gray-900 h-full">
-      {image && alt && <img src={GetPublicUrl(image)} alt={alt} className="rounded-xl self-center object-fill  w-1/2 h-full" />}
-      <div className="p-6 py-2">
+    <div className="card flex flex-row w-full rounded-xl bg-white dark:bg-gray-900 h-full">
+      {image && alt && <img src={GetPublicUrl(image)} alt={alt} className="rounded-xl self-center object-fill w-48 h-full" />}
+      <div className="p-6 py-2 w-auto">
         {title && <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal dark:text-blue-200 text-blue-900 antialiased">{title}</h5>}
-        {text && <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">{text}</p>}
+        {text && <TypingText texts={text} speed={100} pause={1500}></TypingText>}
       </div>
     </div>
   );
