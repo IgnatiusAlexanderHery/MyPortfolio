@@ -14,7 +14,7 @@
   {
     "type": "2",
     "title": "Programing Language",
-    "Skills": ["C", "Java", "Python", "Go", "PHP", "HTML", "CSS", "JS", "SQL"],
+    "Skills": ["C", "Java", "Python", "Go", "PHP", "JS", "SQL"],
     "x": 0,
     "y": 1,
     "w": 1,
@@ -23,7 +23,7 @@
   {
     "type": "2",
     "title": "Framework",
-    "Skills": ["Laravel", "Spring Boot", "Django", "Bootstrap", "Tailwind CSS", "React JS"],
+    "Skills": ["Laravel", "Spring Boot", "Django", "Bootstrap CSS", "Tailwind CSS", "React JS"],
     "x": 0,
     "y": 1,
     "w": 1,
