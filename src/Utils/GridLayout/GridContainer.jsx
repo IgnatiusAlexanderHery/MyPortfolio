@@ -105,7 +105,7 @@ export const GridContainer = ({ GridDatas }) => {
         <div
           key={index}
           data-grid={{ x: GridData.x, y: GridData.y, w: GridData.w, h: GridData.h }}
-          className="bg-white border dark:border-0 border-gray-300 flex flex-col items-center justify-center text-lg draggable-handle rounded-xl lg:text-base md:text-sm sm:text-xs xs:text-xs xxs:text-xs dark:bg-gray-900 dark:border-gray-700 dark:text-white"
+          className="bg-white border dark:border-0 border-gray-300 flex flex-col items-center justify-center text-lg draggable-handle rounded-xl lg:text-base md:text-sm sm:text-xs xs:text-xs xxs:text-xs dark:bg-gray-900 dark:border-gray-700 dark:text-white hover:cursor-grab hover:bg-blue-950"
         >
           {GridData.type === "2" ? (
             <SkillCard {...GridData} />

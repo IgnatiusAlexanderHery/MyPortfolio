@@ -56,7 +56,7 @@ const Timeline = ({ events }) => {
 
 export const CardWithImageUrlTitleTextRepositoryLive = ({ title, text, image, alt, repository, live }) => {
   return (
-    <div className="card flex flex-col justify-between w-full rounded-xl bg-white dark:bg-gray-900 h-full">
+    <div className="card flex flex-col justify-between w-full rounded-xl h-full">
       {image && alt && <img src={GetPublicUrl(image)} alt={alt} className="rounded-xl self-center object-fill  w-full h-28 -xs:h-28 sm:h-28 md:h-28 lg:h-28 xl:h-28 " />}
       <div className="p-6 py-2">
         {title && <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal dark:text-blue-200 text-blue-900 antialiased">{title}</h5>}
@@ -92,7 +92,7 @@ export const CardWithImageUrlTitleTextRepositoryLive = ({ title, text, image, al
 
 export const CardWithLeftImageTitleText = ({ title, text, image, alt }) => {
   return (
-    <div className="card flex flex-row w-full rounded-xl bg-white dark:bg-gray-900 h-full">
+    <div className="card flex flex-row w-full rounded-xl h-full">
       {image && alt && <img src={GetPublicUrl(image)} alt={alt} className="rounded-xl self-center object-fill w-48 h-full" />}
       <div className="p-6 py-2 w-auto">
         {title && <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal dark:text-blue-200 text-blue-900 antialiased">{title}</h5>}
@@ -133,11 +133,7 @@ export const SkillCard = ({ Skills, title }) => {
   }, [hover]);
 
   return (
-    <div
-      className="SkillCard flex flex-col gap-1 items-start px-4 py-4 shadow-xl rounded-lg bg-white border border-gray-200 dark:border-gray-800 dark:bg-gray-900 h-full w-full justify-start"
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
+    <div className="SkillCard flex flex-col gap-1 items-start px-4 py-4 shadow-xl rounded-lg border border-gray-200 dark:border-gray-800 h-full w-full justify-start" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
       <p className="font-semibold text-xl text-gray-600 dark:text-white mb-2">{title}</p>
       <div className="flex flex-wrap gap-2 overflow-x-hidden no-scrollbar" ref={scrollContainerRef}>
         {Skills.map((skill, index) => (
