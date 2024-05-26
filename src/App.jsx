@@ -13,7 +13,7 @@ function App() {
       <DarkModeButton />
       <Header />
       <main className="main">
-        <section id="Home" className="min-h-screen pt-16">
+        <section id="Home" className="min-h-screen pt-16 2xl:max-w-screen-2xl mx-auto">
           <GridContainer GridDatas={GridDatas} />
         </section>
         <section id="About" className="min-h-screen pt-16">

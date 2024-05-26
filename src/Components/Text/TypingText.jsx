@@ -29,7 +29,7 @@ const TypingText = ({ texts, speed = 150, pause = 1000 }) => {
   }, [displayedText, isDeleting, texts, currentTextIndex, speed, pause]);
 
   return (
-    <div className="text-sm font-mono text-blue-500">
+    <div className="text-sm font-mono text-blue-500 dark:text-white">
       {displayedText}
       <span className="animate-blink">|</span>
     </div>
