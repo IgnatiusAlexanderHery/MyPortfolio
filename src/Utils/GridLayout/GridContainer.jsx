@@ -9,11 +9,15 @@ export const GridContainer = ({ GridDatas }) => {
 
   function getSize() {
     if (window.innerWidth <= 320) {
-      return 75;
+      return 90;
+    } else if (window.innerWidth <= 380) {
+      return 180;
+    } else if (window.innerWidth < 455) {
+      return 180;
     } else if (window.innerWidth < 480) {
-      return 125;
+      return 160;
     } else {
-      return 150;
+      return 155;
     }
   }
 
@@ -21,7 +25,7 @@ export const GridContainer = ({ GridDatas }) => {
     const width = window.innerWidth;
     if (width >= 1200) return 6;
     if (width >= 996) return 4;
-    if (width >= 768) return 4;
+    if (width >= 768) return 2;
     if (width >= 480) return 2;
     return 2;
   };
