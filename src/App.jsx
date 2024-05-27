@@ -25,11 +25,10 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="About" className="min-h-screen pt-16 2xl:max-w-screen-2xl mx-auto">
+        <section id="About" className="min-h-screen pt-16 2xl:max-w-screen-2xl mx-auto 2xl:min-h-min">
           <GridContainer GridDatas={GridDatas} />
         </section>
-        <section id="Contact" className="min-h-screen pt-16 2xl:max-w-screen-2xl mx-auto">
-          <h1>Contact Us</h1>
+        <section id="Contact" className="py-16 2xl:max-w-screen-2xl mx-auto">
           <ContactForm />
         </section>
       </main>
