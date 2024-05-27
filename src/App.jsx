@@ -10,13 +10,15 @@ import { ContactForm } from "./Components/ContactForm/ContactForm";
 function App() {
   const GridDatas = getGridData();
 
+  const baseURL = process.env.NODE_ENV === "development" ? "MyPortfolio" : ".";
+
   return (
     <div className="App scroll-smooth">
       <DarkModeButton />
       <Header />
       <main className="main ">
         <section id="Hero" className="min-h-screen bg-cover w-full h-screen text-black">
-          <div className="relative h-screen bg-fixed bg-center bg-cover" style={{ backgroundImage: "url(/img/Hero.jpg)" }}>
+          <div className="relative h-screen bg-fixed bg-center bg-cover" style={{ backgroundImage: `url(${baseURL}/img/Hero.jpg)` }}>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50">
               <h1 className="text-4xl md:text-6xl font-bold mb-4 font-serif">Ignatius Alexander Hery</h1>
               <a className="mt-8 p-4 bg-transparent text-black rounded-full" href="#About" onClick={ScrollTo}>
