@@ -16,7 +16,7 @@ function App() {
     <div className="App scroll-smooth">
       <DarkModeButton />
       <Header />
-      <main className="main ">
+      <main className="main">
         <section id="Hero" className="min-h-screen bg-cover w-full h-screen text-black">
           <div className="relative h-screen bg-fixed bg-center bg-cover" style={{ backgroundImage: `url(${baseURL}/img/Hero.jpg)` }}>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50">
@@ -30,7 +30,7 @@ function App() {
         <section id="About" className="min-h-screen pt-16 2xl:max-w-screen-2xl mx-auto 2xl:min-h-min">
           <GridContainer GridDatas={GridDatas} />
         </section>
-        <section id="Contact" className="py-16 2xl:max-w-screen-2xl mx-auto">
+        <section id="Contact" className="pt-4 2xl:max-w-screen-2xl mx-auto">
           <ContactForm />
         </section>
       </main>

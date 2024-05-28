@@ -44,7 +44,10 @@ export const Header = () => {
   }, []);
 
   return (
-    <nav className="navbar shadow-sm bg-blue-400 dark:bg-blue-800 sticky top-0 z-10">
+    <nav
+      className="navbar shadow-sm bg-gradient-to-r from-sky-200 via-blue-900 to-sky-200
+    dark:from-blue-900 dark:via-sky-200 dark:to-blue-900 sticky top-0 z-10 dark:text-black text-white"
+    >
       <div className="flex justify-center p-5">
         <ul className="flex justify-evenly gap-4">
           <li className="nav-item">

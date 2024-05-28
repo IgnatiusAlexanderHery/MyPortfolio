@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Github, Instagram, Linkedin } from "../../Utils/Icons/Icons";
 
 export const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -35,9 +36,26 @@ export const ContactForm = () => {
     e.target.reset();
   };
   return (
-    <div className="flex flex-col items-center justify-center 2xl:disabled:flex">
-      <div className="text-base min-w-96 bg-white rounded-lg shadow-md p-6 mx-auto sm:w-1/3 2xl:text-xl">
-        <h2 className=" font-bold text-gray-800 mb-4 2xl:text-center">Contact Me</h2>
+    <div
+      className="flex items-center justify-center text-gray-800 bg-gradient-to-r from-sky-200 via-blue-900 to-sky-200
+    dark:from-blue-900 dark:via-sky-200 dark:to-blue-900 py-4"
+    >
+      <div className="text-base w-full max-w-screen--xs bg-blue-600 dark:bg-blue-800 rounded-l-lg p-6 mr-0 mx-10 min-h-96 max-h-96 hidden md:flex md:flex-col justify-between">
+        <div className="text-white text-justify font-mono text-sm overflow-auto">
+          <h2 className="text-2xl">Get in Touch</h2>
+          <p className=" pt-4 ">
+            Thank you for visiting my portfolio. I am always excited to connect with new people and explore potential collaborations. If you have any questions, project inquiries, or just want to say hello, please feel free to contact me
+          </p>
+          <p>For any project or collaboration through the following channels:</p>
+        </div>
+        <div className="flex justify-center gap-4 ">
+          <Github Url={"https://github.com/IgnatiusAlexanderHery"} />
+          <Instagram Url={"https://www.instagram.com/alexhery3107/"} />
+          <Linkedin Url={"http://www.linkedin.com/in/ignatiusalexanderhery"} />
+        </div>
+      </div>
+      <div className="text-base w-full max-w-screen--xs bg-white rounded-lg sm:rounded-none sm:rounded-r-lg p-6 sm:ml-0 mx-10 min-h-96 max-h-96">
+        <h2 className=" font-bold  mb-4 text-center sm:text-2xl">Contact Me</h2>
 
         <form onSubmit={sendEmail} className="text-black flex flex-col pb-4">
           <label>Name</label>
